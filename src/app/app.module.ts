@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    NavBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
